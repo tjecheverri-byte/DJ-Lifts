@@ -22,7 +22,7 @@ export async function POST(req: NextRequest) {
       // resend.com/domains and change this to something like:
       // "bookings@yourdomain.com"
       from: "DJ Lifts Bookings <onboarding@resend.dev>",
-      to: ["bookdjlifts@gmail.com"],
+      to: ["djlifts@gmail.com"],
       replyTo: email,
       subject: `🎧 Booking Request — ${eventType} · ${new Date(eventDate).toLocaleDateString("en-US", { month: "long", day: "numeric", year: "numeric" })}`,
       html: `
