@@ -21,7 +21,7 @@ export async function POST(req: NextRequest) {
       // to your verified email. For production, verify your own domain at
       // resend.com/domains and change this to something like:
       // "bookings@yourdomain.com"
-      from: "DJ Lifts Bookings <bookings@djlifts.com>",
+      from: "DJ Lifts Bookings <onboarding@resend.dev>",
       to: ["bookdjlifts@gmail.com"],
       replyTo: email,
       subject: `🎧 Booking Request — ${eventType} · ${new Date(eventDate).toLocaleDateString("en-US", { month: "long", day: "numeric", year: "numeric" })}`,
